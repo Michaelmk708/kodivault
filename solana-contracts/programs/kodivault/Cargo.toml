@@ -1,0 +1,23 @@
+[package]
+name = "kodivault"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "kodivault"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.32.1" # Make sure this matches your anchor CLI version
+anchor-spl = "0.32.1"  # Since you are using custom tokens (dKES)
+
+
+
